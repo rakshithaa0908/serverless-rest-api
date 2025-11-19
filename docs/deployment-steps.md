@@ -84,7 +84,7 @@ Paste the Invoke URL in `api.js` as:
 
 ```javascript
 const API_URL = "https://your-api-id.execute-api.ap-south-1.amazonaws.com/proddeploy/register";
-
+```
 ## 9. Test
 1. Open your HTML registration form in the browser
 2. Enter first name, last name, address, email and phone number
