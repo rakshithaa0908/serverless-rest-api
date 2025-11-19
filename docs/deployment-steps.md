@@ -39,13 +39,6 @@
 4. Click **Create function**
 5. Replace the default code with your `lambda_function.py` file
 6. Click **Deploy**
-7. Test with:
-
-```json
-{
-  "httpMethod": "POST",
-  "body": "{\"email\":\"test@example.com\", \"first_name\":\"John\", \"last_name\":\"Doe\", \"address\":\"Test\", \"phno\":\"9999\"}"
-}
 
 ---
 
@@ -94,6 +87,7 @@ Paste the Invoke URL in `api.js` as:
 
 ```javascript
 const API_URL = "https://your-api-id.execute-api.ap-south-1.amazonaws.com/proddeploy/register";
+
 ```
 ---
 
