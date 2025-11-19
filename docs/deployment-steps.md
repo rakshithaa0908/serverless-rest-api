@@ -47,6 +47,8 @@
   "body": "{\"email\":\"test@example.com\", \"first_name\":\"John\", \"last_name\":\"Doe\", \"address\":\"Test\", \"phno\":\"9999\"}"
 }
 
+---
+
 ## 4. Create REST API in API Gateway
 1. Open **API Gateway**
 2. Click **Create API**
@@ -54,6 +56,8 @@
 4. API type: **New API**
 5. Name: `registration-api`
 6. Click **Create API**
+
+---
 
 ## 5. Create Resource and POST Method
 1. In Resources → Click **Create Resource**
@@ -66,11 +70,15 @@
 8. Select your function: `registration-form-function`
 9. Click **Save**
 
+---
+
 ## 6. Enable CORS
 1. Select `/register`
 2. Click **Enable CORS**
 3. Choose **POST**
 4. Save changes
+
+---
 
 ## 7. Deploy API
 1. Click **Actions → Deploy API**
@@ -79,12 +87,16 @@
 4. Click **Deploy**
 5. Copy the Invoke URL
 
+---
+
 ## 8. Update Frontend
 Paste the Invoke URL in `api.js` as:
 
 ```javascript
 const API_URL = "https://your-api-id.execute-api.ap-south-1.amazonaws.com/proddeploy/register";
 ```
+---
+
 ## 9. Test
 1. Open your HTML registration form in the browser
 2. Enter first name, last name, address, email and phone number
@@ -94,3 +106,5 @@ const API_URL = "https://your-api-id.execute-api.ap-south-1.amazonaws.com/prodde
    - Select table `registration-form`
    - Click **Explore table items**
 5. Confirm that the new user record is stored successfully
+
+---
