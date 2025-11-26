@@ -12,7 +12,7 @@ document.getElementById("regForm").addEventListener("submit", async (e) => {
     };
 
     try {
-        const res = await fetch("https://ghanjduru2.execute-api.ap-south-1.amazonaws.com/proddeploy/register", {
+        const res = await fetch("https://0yn7jss798.execute-api.ap-south-1.amazonaws.com/stage/resource", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data)
