@@ -1,4 +1,7 @@
 # Deployment Steps – Lambda + API Gateway + DynamoDB
+This guide walks through setting up a serverless REST API using AWS Lambda, API Gateway and DynamoDB via the AWS Console.
+
+---
 
 ## 1. Create DynamoDB Table
 1. Open AWS Console → DynamoDB  
@@ -102,3 +105,4 @@ const API_URL = "https://your-api-id.execute-api.ap-south-1.amazonaws.com/prodde
 5. Confirm that the new user record is stored successfully
 
 ---
+> ✅ Deployment complete. Your serverless REST API is now live and connected to DynamoDB.
