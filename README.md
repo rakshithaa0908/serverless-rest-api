@@ -9,20 +9,31 @@ This project demonstrates how to build a fully serverless REST API using AWS Lam
 ### Serverless REST API
 A backend that runs without provisioning or maintaining servers. AWS handles scaling and availability automatically.
 
-### Key Features
-- No server management
-- Pay only for what you use
-- Automatic scaling
-- High availability
-- Easy to extend with AWS services
-
 ### Components
 - API Gateway: Entry point for all HTTP requests
 - Lambda: Executes backend logic
 - DynamoDB: Fast, serverless NoSQL database
 
----
+### How It Works
+1. Client sends an HTTP POST request
+2. API Gateway receives and routes it to the correct Lambda function
+3. Lambda executes the backend logic
+4. Lambda reads or writes data in DynamoDB
+5. API Gateway returns the response to the client
 
+### Technologies Used
+- AWS Lambda
+- AWS API Gateway
+- AWS DynamoDB
+- Python (Lambda function)
+- JavaScript (API integration)
+- HTML (Frontend form)
+---
+## Prerequisites
+- AWS account with appropriate IAM permissions
+- AWS CLI configured
+- Basic knowledge of AWS Lambda, API Gateway and DynamoDB
+---
 ## Deployment Steps
 
 Full deployment instructions:  
@@ -34,31 +45,23 @@ See full deployment instructions [here](docs/deployment-steps.md)
 serverless-api-integration/
 │
 ├── docs/
-│ ├── deployment-steps.md 
-│ └── screenshots/
-│ 	├── dynamodb_data.png 
-│ 	├── registration_form.png
-│ 	├── registration_success.png
-│ 	└── architecture.png # Architecture diagram
-├── README.md
+│   ├── deployment-steps.md
+│   └── screenshots/
+│       ├── dynamodb_data.png
+│       ├── registration_form.png
+│       ├── registration_success.png
+│       └── architecture.png
 ├── api.js
-├── lamba_function.py
-├── register.html 
-└── LICENSE 
+├── lambda_function.py
+├── register.html
+├── README.md
+└── LICENSE
 ```
 
 ---
 
 ## Architecture Diagram
-
-**Serverless REST API Architecture**  
-![Serverless REST API Architecture](docs/screenshots/architecture.png)
-
-- The client sends an HTTP POST request.
-- API Gateway receives the request and routes it to the correct Lambda function.
-- The Lambda function executes the backend logic.
-- Lambda reads or writes data in DynamoDB.
-- API Gateway sends the response back to the client.
+![Architecture](docs/screenshots/architecture.png)
 
 ---
 
@@ -75,6 +78,10 @@ serverless-api-integration/
 
 ---
 
+## About This Project
+Built to demonstrate a fully serverless backend architecture on AWS. No servers to manage — AWS handles compute, routing, and storage automatically. Suitable as a reference for building lightweight, scalable REST APIs using AWS managed services.
+
+---
 ## License
 
 MIT License. See `LICENSE` file for details.
